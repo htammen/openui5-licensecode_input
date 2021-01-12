@@ -10,6 +10,6 @@ sap.ui.define([],function(){"use strict";
    * @namespace
    * @name openui5.licensecode_input
    * @author Helmut Tammen
-   * @version 1.0.0
+   * @version 1.0.1
    * @public
-   */return sap.ui.getCore().initLibrary({name:"openui5.licensecode_input",dependencies:["sap.ui.core"],controls:["openui5.licensecode.licensecodeInput"],noLibraryCSS:true,version:"1.0.0"})});
+   */return sap.ui.getCore().initLibrary({name:"openui5.licensecode_input",dependencies:["sap.ui.core"],controls:["openui5.licensecode.licensecodeInput"],noLibraryCSS:true,version:"1.0.1"})});

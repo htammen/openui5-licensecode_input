@@ -3,7 +3,7 @@
     "id": "openui5.licensecode_input",
     "type": "library",
     "applicationVersion": {
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     "title": "An OpenUI5 library with a license code input control"
   },

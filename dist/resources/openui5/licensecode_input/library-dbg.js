@@ -13,7 +13,7 @@ sap.ui.define([], function() {
    * @namespace
    * @name openui5.licensecode_input
    * @author Helmut Tammen
-   * @version 1.0.0
+   * @version 1.0.1
    * @public
    */
   return sap.ui.getCore().initLibrary({
@@ -23,6 +23,6 @@ sap.ui.define([], function() {
     ],
     controls: ['openui5.licensecode.licensecodeInput'],
     noLibraryCSS: true,
-    version: '1.0.0'
+    version: '1.0.1'
   });
 });
