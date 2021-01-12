@@ -1,0 +1,54 @@
+<mvc:View controllerName="htammen.demo.openui5.licensecode_input.controller.App" displayBlock="true"
+          xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m"
+          xmlns:license="openui5.licensecode_input">
+    <Shell>
+        <App>
+            <Page title="{i18n>TITLE}">
+                <content>
+                    <VBox class="sapUiMediumMargin">
+                        <FormattedText htmlText="{i18n>demo.description}"/>
+                        <Label text="Enter a license code with 4 controls. Each control contains 4 chars. So in sum the license code is 16 chars long" class="sapUiLargeMarginTop"/>
+                        <HBox alignItems="Center" alignContent="SpaceBetween">
+                            <license:LicenseCode id="licenseCode0" 
+                                value="{path: '/licenseCode0'}" 
+                                valueStateText="Enter a license code with 16 characters">
+                            </license:LicenseCode>
+                            <Label text="LicenseCode Value:" vAlign="Bottom" class="sapUiResponsiveMargin"/>
+                            <Text text="{path: '/licenseCode0'}" class="sapUiTinyMarginBeginEnd"/>
+                        </HBox>
+                        <Label text="Enter a license code with 3 controls. Each control contains 3 chars. So in sum the license code is 9 chars long" class="sapUiLargeMarginTop"/>
+                        <HBox alignItems="Center" alignContent="SpaceBetween">
+                            <license:LicenseCode id="licenseCode1" 
+                                value="{path: '/licenseCode1'}" 
+                                controlCount='3'
+                                singleControlLength='3'
+                                valueStateText="Enter a license code with 9 characters">
+                            </license:LicenseCode>
+                            <Label text="LicenseCode Value:" vAlign="Bottom" class="sapUiResponsiveMargin"/>
+                            <Text text="{path: '/licenseCode1'}" class="sapUiTinyMarginBeginEnd"/>
+                        </HBox>
+                        <Label text="Enter a license code with 2 controls. Each control contains 6 chars. So in sum the license code is 16 chars long" class="sapUiLargeMarginTop"/>
+                        <HBox alignItems="Center" alignContent="SpaceBetween">
+                            <license:LicenseCode id="licenseCode2" 
+                                value="{path: '/licenseCode2'}" 
+                                controlCount='2'
+                                singleControlLength='6'
+                                valueStateText="Enter a license code with 12 characters">
+                            </license:LicenseCode>
+                            <Label text="LicenseCode Value:" vAlign="Bottom" class="sapUiResponsiveMargin"/>
+                            <Text text="{path: '/licenseCode2'}" class="sapUiTinyMarginBeginEnd"/>
+                        </HBox>
+                    </VBox>
+                </content>
+                <footer>
+                    <Toolbar>
+                        <Button id="btMessagePopover" icon="sap-icon://message-popup" type="Reject"
+                                visible="false" press="onMessagePopoverPress"/>
+                        <ToolbarSpacer/>
+                        <Button icon="sap-icon://save" text="Save" press="onSave" />
+                    </Toolbar>
+                </footer>
+            </Page>
+        </App>
+    </Shell>
+</mvc:View>

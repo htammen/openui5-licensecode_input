@@ -1,0 +1,38 @@
+{
+	"sap.app": {
+		"id": "htammen.demo.openui5.licensecode_input",
+		"type": "application",
+		"title": "{{TITLE}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+        		"openui5.licensecode_input": {}
+			},
+			"minUI5Version": "1.52.0"
+		},
+		"rootView": {
+			"viewName": "htammen.demo.openui5.licensecode_input.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "htammen.demo.openui5.licensecode_input.i18n.i18n"
+				}
+			}
+		},
+		"handleValidation": true,
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	}
+}

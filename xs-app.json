@@ -1,0 +1,10 @@
+{
+    "welcomeFile": "/demo/webapp/index.html",
+    "authenticationMethod": "none",
+    "routes": [
+        {
+            "source": "^(.*)$",
+            "localDir": "./"
+        }
+    ]
+}

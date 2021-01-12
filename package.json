@@ -1,0 +1,54 @@
+{
+  "name": "openui5-licensecode_input",
+  "version": "1.0.0",
+  "description": "An OpenUI5 library with a license code input control",
+  "homepage": "https://github.com/htammen/openui5-licensecode_input#readme",
+  "author": "Helmut Tammen",
+  "license": "MIT",
+  "keywords": [
+    "openui5",
+    "sapui5",
+    "ui5",
+    "ui5lab",
+    "input",
+    "license",
+    "license code",
+    "registration"
+  ],
+  "main": "dist/resources/openui5/license_code/library-preload.js",
+  "files": [
+    "dist",
+    "src",
+    "ui5.yaml"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@openui5/ts-types": "^1.60.5",
+    "@sap/approuter": "^9.0.1",
+    "eslint": "^7.11.0",
+    "karma": "^5.2.3",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.3",
+    "karma-coveralls": "^2.1.0",
+    "karma-ui5": "^2.3.1"
+  },
+  "scripts": {
+    "start": "ui5 serve",
+    "build": "ui5 build --clean-dest",
+    "lint": "eslint src && eslint test",
+    "lint-fix": "eslint src --fix && eslint test --fix",
+    "test": "karma start",
+    "test-ci": "karma start karma.ci.conf",
+    "preversion": "npm run test-ci",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags",
+    "demo": "node ./node_modules/@sap/approuter/approuter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/htammen/openui5-licensecode_input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htammen/openui5-licensecode_input/issues"
+  }
+}
