@@ -5,6 +5,25 @@
 
 An OpenUI5 library to enter a license code, registration code or ...
 
+## Description
+
+This control enables you to split the input of a lengthly structured user input into a number of small chunks.  
+Often your user has to enter a registration code, license code, security code, ... which consists of a lengthly string
+with a lot of special characters ($%&-...).  
+Lets assume the code has 16 characters and looks like this:  
+`A§$%G_()#Rjy%6/_`  
+It's most likely that the user will fail one or more times and get's in a bad mood even before using your software.  
+It's much easier to enter the string in 4 chunks of 4 characters:  
+`A§$%` - `G_()` - `#Rjy` - `%6/_`
+
+The `licensecode_input` control helps you with this. You define how many chunks you need and how many characters each chunk contains and
+the control create the number of inner controls with a corresponding maxlength property.  
+In the end you (as a developer) ask the control for the value and get the data of the chunks as the lengthly string you need. 
+
+_Of course there is the `sap.m.MaskInput` which does something similar. But that control always needs a placeholder character which than can't
+be part of the license code. In my customer application I needn't a control without this restriction. Btw. my control is a bit more responsive 
+cause it wraps the inner controls into new lines if there is not enough space_
+
 ## Demo
 
 You can check out a live demo here:
@@ -98,6 +117,13 @@ Add openui5-licensecode to your UI5 view:
 | valueStateText | string | null | Text to display under the control if validation of value failed
 | controlCount | int | 4 | Number of inner controls (input fields) to display and use for this control
 | singleControlLength | int | 4 | Length of each inner control (input field). Means: how many characters are allowed in each input field 
+
+## Run demo locally
+
+To run the demo application locally after you have cloned the repo to your local computer you should
+- `npm install`
+- `npm run build`
+- `npm run demo`
 
 ## Author
 

@@ -1,7 +1,7 @@
 {
   "name": "openui5-licensecode_input",
   "version": "1.0.0",
-  "description": "An OpenUI5 library with a license code input control",
+  "description": "An OpenUI5 library with a license/registration code input control",
   "homepage": "https://github.com/htammen/openui5-licensecode_input#readme",
   "author": "Helmut Tammen",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "license code",
     "registration"
   ],
-  "main": "dist/resources/openui5/license_code/library-preload.js",
+  "main": "dist/resources/openui5/licensecode_input/library-preload.js",
   "files": [
     "dist",
     "src",
