@@ -16,6 +16,9 @@
 			},
 			"minUI5Version": "1.52.0"
 		},
+		"resourceRoots": {
+			"openui5.licensecode_input": "../../dist/resources/openui5/licensecode_input"
+		},
 		"rootView": {
 			"viewName": "htammen.demo.openui5.licensecode_input.view.App",
 			"type": "XML",
